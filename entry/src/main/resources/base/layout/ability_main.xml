@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text_color="$color:orange"
+        ohos:text_size="30vp"
+        ohos:text="$string:Title"
+        ohos:multiple_lines="true"
+        ohos:bottom_margin="20vp"
+        ohos:top_margin="40vp"
+        ohos:left_margin="20vp"
+        ohos:right_margin="20vp"/>
+
+
+    <Button
+        ohos:id="$+id:make_pair_btn"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:left_padding="4vp"
+        ohos:right_padding="4vp"
+        ohos:top_padding="4vp"
+        ohos:bottom_padding="4vp"
+        ohos:start_margin="60vp"
+        ohos:end_margin="60vp"
+        ohos:top_margin="60vp"
+        ohos:bottom_margin="20vp"
+        ohos:text_color="$color:black"
+        ohos:background_element="$color:blue"
+        ohos:text="make Pair"
+        ohos:text_size="30vp"/>
+
+    <Button
+        ohos:id="$+id:make_triplet_btn"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:left_padding="4vp"
+        ohos:right_padding="4vp"
+        ohos:top_padding="4vp"
+        ohos:bottom_padding="4vp"
+        ohos:start_margin="60vp"
+        ohos:end_margin="60vp"
+        ohos:top_margin="20vp"
+        ohos:bottom_margin="20vp"
+        ohos:text_color="$color:black"
+        ohos:background_element="$color:blue"
+        ohos:text="make Triplet"
+        ohos:text_size="30vp"/>
+
+</DirectionalLayout>
