@@ -1,5 +1,4 @@
 /*
- * Copyright (c) pakoito 2015
  * Copyright (C) 2020-21 Application Library Engineering Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,28 +12,19 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
-*/
-apply plugin: 'com.huawei.ohos.library'
-ohos {
-    compileSdkVersion 5
-    defaultConfig {
-        compatibleSdkVersion 5
-    }
-    buildTypes {
-        release {
-            proguardOpt {
-                proguardEnabled false
-                rulesFiles 'proguard-rules.pro'
-            }
-        }
-    }
-    
-}
+ */
 
-dependencies {
-    testImplementation 'junit:junit:4.13'
+package com.pacoworks.rxtuples;
 
-    implementation 'org.javatuples:javatuples:1.2'
-    implementation 'io.reactivex:rxjava:1.3.8'
-    implementation 'org.jetbrains:annotations:19.0.0'
+import ohos.aafwk.ability.Ability;
+import ohos.aafwk.content.Intent;
+import com.pacoworks.rxtuples.slice.MainAbilitySlice;
+
+/** MainAbility. **/
+public class MainAbility extends Ability {
+    @Override
+    public void onStart(Intent intent) {
+        super.onStart(intent);
+        super.setMainRoute(MainAbilitySlice.class.getName());
+    }
 }
